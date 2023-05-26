@@ -119,9 +119,9 @@ For example：
         </tr>  
 </table>  
 
-*****
+****
 
-## 2	Data Modalities
+## 2	Data modalities
 
 **Note**: In some actions, when we collect side views *ax_d1_px_c2*, *ax_d2_px_c2* and *ax_d3_px_c2* data with camera #2, we also use anthor camera named camera #3 to collect side views *ax_d7_px_c2*, *ax_d6_px_c2* and *ax_d5_px_c2* data at the same time. The data collected from camera1 are named as *ax_d1_px_c1*, *ax_d2_px_c1* and *ax_d3_px_c1*, which means, for each action, except for varying view, there are 7 side view data named *ax_dm_px_c2* (m: range from 1 to 7) and 4 front view data named *ax_dn_px_c1* (n: range from 1 to 4). To keep the integrity of this dataset, we copy data named *ax_d1_px_c1*, *ax_d2_px_c1* and *ax_d2_px_c1* to *ax_d7_px_c1*, *ax_d6_px_c1* and *ax_d5_px_c1*. However the depth files are too large to process like that. Therefore we made a name map for Depth Data which can be found in `namemap.xls`. It can help you to copy the paired data by yourself.
 
@@ -150,8 +150,13 @@ According to the Kinect SDK document, the high 13-bits in the depth data represe
 ### 2.4	Skeleton MAT (25600 files with size of 5.5GB)
 We extra provide the MATLAB `.mat` files for convenience. MATLAB skeleton files(saved as `.mat` files) are restored in the `mat_from_skeleton/ax_dx_px_cx_skeleton.mat` directory. The mats are extracted from skeleton txt files. In one mat file, each row contains one skeleton frame (25 joints) and these joints are described in camera space coordinate. **You can also get your own MAT files using the data prepare script.**
 
+****
 
-## 3. data prepare script
+## 3. Data download and prepare script
+We pack RGB data and skeleton data (txt) respectively. The RGB data file has 80G in size after compressed, so we divide it into several smaller files. The RGB data link is [[Baidu Drive]](https://pan.baidu.com/s/1_pNFIjbxksFWJaUppXzk6A) (extract number: vrb3) and the skeleton data link is [[Baidu Drive]](https://pan.baidu.com/s/1XDOazkGA_rb701DnCJbE4g) (extract number: ldwc).
+
+We also have made all files available on [[Feishu Drive]](https://uestc.feishu.cn/drive/folder/fldcnuOWl00LpKXh2EleOoCaPmd).
+
 We provide a raw data pre-processing script used to re-format the raw skeleton files , please refer to `scripts/` directory for more detail.
 
 ****
