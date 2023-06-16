@@ -155,7 +155,7 @@ We extra provide the MATLAB `.mat` files for convenience. MATLAB skeleton files(
 ## 3. Data download and prepare script
 We pack RGB data and skeleton data (txt) respectively. The RGB data file has 80G in size after compressed, so we divide it into several smaller files. The RGB data link is [[Baidu Drive]](https://pan.baidu.com/s/1_pNFIjbxksFWJaUppXzk6A) (extract number: vrb3) and the skeleton data link is [[Baidu Drive]](https://pan.baidu.com/s/1XDOazkGA_rb701DnCJbE4g) (extract number: ldwc).
 
-We also have made all files available on [[Feishu Drive]](https://uestc.feishu.cn/drive/folder/fldcnuOWl00LpKXh2EleOoCaPmd).
+We also have made all files available on [[Feishu Drive]](https://uestc.feishu.cn/drive/folder/fldcnuOWl00LpKXh2EleOoCaPmd) (extract number: vO2l).
 
 We provide a raw data pre-processing script used to re-format the raw skeleton files , please refer to `scripts/` directory for more detail.
 
